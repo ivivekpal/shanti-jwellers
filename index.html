@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shanti Jewellers – Rania, Kanpur Dehat</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fffaf3;--card:#fff;--ink:#2b1a14;--mute:#7a6a60;--maroon:#6b1a2b;--maroon2:#8e2a3f;--gold:#b8892f;--gold2:#e3c068;--line:#eadfce;--soft:#f6ecdc;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1a1013;--card:#24171b;--ink:#f6eadb;--mute:#b9a89a;--maroon:#a63a52;--maroon2:#c0506a;--gold:#e3c068;--gold2:#f1d78d;--line:#3a2a2e;--soft:#2b1c21;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1a1013;--card:#24171b;--ink:#f6eadb;--mute:#b9a89a;--maroon:#a63a52;--maroon2:#c0506a;--gold:#e3c068;--gold2:#f1d78d;--line:#3a2a2e;--soft:#2b1c21;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Poppins',system-ui,sans-serif;line-height:1.6}
+h1,h2,h3,.serif{font-family:'Playfair Display',Georgia,serif;font-weight:500;margin:0}
+a{color:inherit;text-decoration:none}.wrap{max-width:1180px;margin:0 auto;padding:0 20px}
+.top{background:var(--maroon);color:#fff;font-size:13px;text-align:center;padding:7px 12px;letter-spacing:.3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px}.logo svg{width:38px;height:38px}
+.logo b{font-family:'Playfair Display',serif;font-size:23px;color:var(--maroon);display:block;line-height:1}
+.logo small{font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase}
+nav{display:flex;gap:26px;font-size:14px;font-weight:500}nav a:hover{color:var(--gold)}
+.btn{display:inline-block;border:0;cursor:pointer;background:var(--maroon);color:#fff;padding:11px 24px;border-radius:4px;font:500 14px 'Poppins',sans-serif;letter-spacing:.4px;transition:.2s}
+.btn:hover{background:var(--maroon2)}.btn.gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:#2b1a14}.btn.ghost{background:transparent;border:1px solid var(--gold);color:var(--gold)}
+.hero{background:radial-gradient(circle at 80% 30%,#a8334b 0,#6b1a2b 45%,#40101a 100%);color:#fff;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding-top:70px;padding-bottom:70px}
+.hero small{letter-spacing:4px;color:var(--gold2);text-transform:uppercase;font-size:12px}
+.hero h1{font-size:clamp(34px,5vw,58px);line-height:1.15;margin:12px 0 16px}.hero h1 em{color:var(--gold2)}
+.hero p{max-width:480px;opacity:.88;font-weight:300}.hero .cta{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+.ring{display:flex;justify-content:center}.ring svg{width:min(340px,80%);filter:drop-shadow(0 20px 40px rgba(0,0,0,.35))}
+section{padding:64px 0}.title{text-align:center;margin-bottom:38px}.title small{color:var(--gold);letter-spacing:4px;text-transform:uppercase;font-size:12px}
+.title h2{font-size:clamp(26px,3.5vw,38px);color:var(--maroon);margin-top:6px}.title h2:after{content:"";display:block;width:60px;height:2px;background:var(--gold);margin:12px auto 0}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:24px 12px;text-align:center;cursor:pointer;transition:.2s}
+.cat:hover{border-color:var(--gold);transform:translateY(-3px)}.cat .ic{font-size:30px}.cat span{display:block;margin-top:6px;font-weight:500;font-size:14px}
+.filters{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
+.chip{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:7px 18px;border-radius:30px;cursor:pointer;font:400 13px 'Poppins',sans-serif}
+.chip.on{background:var(--maroon);color:#fff;border-color:var(--maroon)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(235px,1fr));gap:22px}
+.item{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:.25s;position:relative}
+.item:hover{box-shadow:0 12px 30px rgba(107,26,43,.15);transform:translateY(-4px)}
+.pic{aspect-ratio:1;background:var(--soft);display:flex;align-items:center;justify-content:center}.pic img{width:100%;height:100%;object-fit:cover}
+.pic svg{width:45%;opacity:.7}.info{padding:14px 16px 18px}.info small{color:var(--gold);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}
+.info h3{font-size:17px;margin:3px 0 4px}.info p{margin:0 0 12px;font-size:13px;color:var(--mute)}
+.info .btn{width:100%;padding:9px;font-size:13px}.del{position:absolute;top:8px;right:8px;background:#c0392b;color:#fff;border:0;border-radius:50%;width:28px;height:28px;cursor:pointer;display:none}
+body.admin .del{display:block}.empty{text-align:center;color:var(--mute);grid-column:1/-1}
+.why{background:var(--soft)}.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;text-align:center}
+.feat div{padding:22px}.feat .ic{font-size:34px}.feat h3{font-size:18px;color:var(--maroon);margin:8px 0 4px}.feat p{margin:0;font-size:13.5px;color:var(--mute)}
+.enq{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:start}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:28px}
+label{display:block;font-size:13px;font-weight:500;margin:0 0 4px}
+input,select,textarea{width:100%;padding:11px 13px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);font:400 14px 'Poppins',sans-serif;margin-bottom:14px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);border-color:transparent}
+.wa{background:#1fa855;color:#fff;width:100%;padding:13px}.wa:hover{background:#188a45}
+.contact p{margin:6px 0 16px;color:var(--mute)}.contact h3{color:var(--maroon);font-size:20px}
+footer{background:#2b0d15;color:#e9d9c3;padding:36px 0 22px;text-align:center;font-size:13.5px}footer b{font-family:'Playfair Display',serif;font-size:24px;color:var(--gold2);display:block}
+footer a{color:var(--gold2);cursor:pointer;text-decoration:underline}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}.modal.on{display:flex}
+.modal .box{width:100%;max-width:400px;position:relative}.x{position:absolute;right:14px;top:8px;border:0;background:none;font-size:26px;color:var(--mute);cursor:pointer}
+#adminBar{display:none;background:var(--soft);border-bottom:2px solid var(--gold);padding:22px 0}body.admin #adminBar{display:block}
+#adminBar .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;align-items:end}#adminBar input,#adminBar select{margin:0}
+.mapcard{display:block;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card)}.mapcard svg{display:block;width:100%;height:150px}.mapcard span{display:block;padding:12px 14px;font-weight:500;font-size:14px}.mapcard small{color:var(--mute);font-weight:400}
+.msg{font-size:13px;margin-top:8px;min-height:18px;color:var(--maroon)}
+@media(max-width:820px){nav{display:none}.hero .wrap,.enq{grid-template-columns:1fr}.ring{order:-1}.hero .wrap{padding-top:40px;padding-bottom:40px}}
+</style>
+</head>
+<body>
+<div class="top">✦ BIS Hallmarked Gold · Certified Diamonds · Free Consultation at Rania, Kanpur Dehat ✦</div>
+<header><div class="wrap nav">
+ <a href="#top" class="logo"><svg viewBox="0 0 40 40"><path d="M20 3l7 8h-14z" fill="#b8892f"/><path d="M13 11h14l7 7-14 19L6 18z" fill="none" stroke="#6b1a2b" stroke-width="2.2" stroke-linejoin="round"/><path d="M6 18h28M13 11l7 26 7-26" fill="none" stroke="#b8892f" stroke-width="1.5"/></svg><span><b>Shanti Jewellers</b><small>Since Generations</small></span></a>
+ <nav><a href="#collections">Collections</a><a href="#categories">Categories</a><a href="#why">Why Us</a><a href="#enquiry">Enquiry</a><a href="#contact">Visit Us</a></nav>
+ <div style="display:flex;gap:8px"><a class="btn gold" href="#enquiry">Enquire Now</a></div>
+</div></header>
+
+<div id="adminBar"><div class="wrap">
+ <h3 class="serif" style="color:var(--maroon);margin-bottom:12px">Admin Panel – Add Jewellery Item</h3>
+ <div class="row">
+  <div><label>Item name</label><input id="aName" placeholder="e.g. Kundan Necklace Set"></div>
+  <div><label>Category</label><select id="aCat"></select></div>
+  <div><label>Weight / details</label><input id="aWt" placeholder="e.g. 22K · 18 gm"></div>
+  <div><label>Photo</label><input id="aImg" type="file" accept="image/*"></div>
+  <div><button class="btn" id="aAdd" style="width:100%">Add Item</button></div>
+ </div>
+ <div class="msg" id="aMsg"></div>
+ <button class="chip" id="logout" style="margin-top:6px">Logout</button>
+</div></div>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+ <div><small>Shanti Jewellers · Rania</small>
+ <h1>Where Every Piece Tells a <em>Golden Story</em></h1>
+ <p>Timeless gold, diamond and silver jewellery crafted with purity and trust – for weddings, festivals and every moment worth cherishing.</p>
+ <div class="cta"><a class="btn gold" href="#collections">Explore Collection</a><a class="btn ghost" href="#enquiry">Book Enquiry</a></div></div>
+ <div class="ring"><svg viewBox="0 0 300 300"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1d78d"/><stop offset=".5" stop-color="#b8892f"/><stop offset="1" stop-color="#e3c068"/></linearGradient></defs><circle cx="150" cy="185" r="85" fill="none" stroke="url(#g)" stroke-width="22"/><circle cx="150" cy="185" r="62" fill="none" stroke="#00000030" stroke-width="2"/><path d="M150 40l34 38-34 58-34-58z" fill="#fff" fill-opacity=".92"/><path d="M116 78h68M150 40l-14 38 14 58 14-58z" fill="none" stroke="#9ec9e0" stroke-width="2"/><circle cx="60" cy="60" r="3" fill="#f1d78d"/><circle cx="245" cy="95" r="4" fill="#f1d78d"/><circle cx="235" cy="230" r="2.5" fill="#f1d78d"/></svg></div>
+</div></div>
+
+<section id="categories"><div class="wrap"><div class="title"><small>Shop by</small><h2>Categories</h2></div><div class="cats" id="cats"></div></div></section>
+
+<section id="collections" style="background:var(--soft)"><div class="wrap"><div class="title"><small>Our Latest</small><h2>Jewellery Collection</h2></div>
+ <div class="filters" id="filters"></div><div class="grid" id="grid"></div></div></section>
+
+<section class="why" id="why" style="background:var(--bg)"><div class="wrap"><div class="title"><small>The Shanti Promise</small><h2>Why Choose Us</h2></div>
+ <div class="feat"><div><div class="ic">🏅</div><h3>BIS Hallmarked</h3><p>100% certified purity on every gold ornament.</p></div><div><div class="ic">💎</div><h3>Certified Diamonds</h3><p>Brilliant stones with authentic certification.</p></div><div><div class="ic">🔁</div><h3>Fair Exchange</h3><p>Transparent exchange and buy-back policy.</p></div><div><div class="ic">🛠️</div><h3>Custom Designs</h3><p>Bring your idea – our karigars craft it.</p></div></div></div></section>
+
+<section id="enquiry" style="background:var(--soft)"><div class="wrap"><div class="title"><small>Get in touch</small><h2>Send an Enquiry</h2></div>
+<div class="enq">
+ <div class="box"><form id="eForm" onsubmit="return false">
+  <label>Your name *</label><input id="eName" required placeholder="Full name">
+  <label>Mobile number *</label><input id="ePhone" required inputmode="tel" placeholder="10-digit mobile number">
+  <label>Interested in</label><select id="eInt"></select>
+  <label>Budget / message</label><textarea id="eMsg" rows="4" placeholder="Tell us what you’re looking for…"></textarea>
+  <button class="btn wa" id="eSend">Send Enquiry on WhatsApp</button><div class="msg" id="eNote"></div>
+ </form></div>
+ <div class="contact" id="contact"><h3 class="serif">Visit Our Showroom</h3><p>Shanti Jewellers<br>Rania, Kanpur Dehat,<br>Uttar Pradesh, India</p>
+  <h3 class="serif">Call / WhatsApp</h3><p><a href="https://wa.me/916392615114" target="_blank" rel="noopener">+91 63926 15114</a></p>
+  <h3 class="serif">Showroom Hours</h3><p>Mon – Sun: 10:00 AM – 8:00 PM</p>
+  <a class="mapcard" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Shanti+Jewellers+Rania+Kanpur+Dehat"><svg viewBox="0 0 400 170" preserveAspectRatio="xMidYMid slice"><rect width="400" height="170" fill="#efe6d4"/><path d="M0 120C90 90 150 140 240 100S350 60 400 80" stroke="#fff" stroke-width="14" fill="none"/><path d="M120 0C140 60 110 110 150 170" stroke="#fff" stroke-width="10" fill="none"/><path d="M280 0C270 50 300 120 330 170" stroke="#fff" stroke-width="8" fill="none"/><path d="M200 38c-14 0-25 11-25 25 0 19 25 45 25 45s25-26 25-45c0-14-11-25-25-25z" fill="#c0392b"/><circle cx="200" cy="63" r="9" fill="#fff"/></svg><span>📍 Shanti Jewellers, Rania, Kanpur Dehat<br><small>Tap to open in Google Maps</small></span></a>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px"><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Shanti+Jewellers+Rania+Kanpur+Dehat">View on Google Maps</a><a class="btn gold" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=Shanti+Jewellers+Rania+Kanpur+Dehat">Get Directions</a></div></div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap"><b>Shanti Jewellers</b><p>Rania, Kanpur Dehat · +91 63926 15114</p><p>© 2026 Shanti Jewellers. All rights reserved. · <a id="adminLink">Admin Login</a></p></div></footer>
+
+<div class="modal" id="login"><div class="box"><button class="x" id="lx">×</button><h3 class="serif" style="color:var(--maroon);margin-bottom:14px">Admin Login</h3>
+ <label>User ID</label><input id="lu" autocomplete="username"><label>Password</label><input id="lp" type="password" autocomplete="current-password">
+ <button class="btn" id="lgo" style="width:100%">Login</button><div class="msg" id="lmsg"></div></div></div>
+
+<script type="application/json" id="data">{"items":[
+{"id":"s1","name":"Bridal Gold Necklace Set","cat":"Necklace","wt":"22K · Heavy","img":""},
+{"id":"s2","name":"Traditional Jhumka Earrings","cat":"Earrings","wt":"22K · 12 gm","img":""},
+{"id":"s3","name":"Diamond Solitaire Ring","cat":"Rings","wt":"18K · Certified","img":""},
+{"id":"s4","name":"Classic Gold Bangles (Pair)","cat":"Bangles","wt":"22K · 40 gm","img":""},
+{"id":"s5","name":"Mangalsutra Gold Pendant","cat":"Necklace","wt":"22K · 9 gm","img":""},
+{"id":"s6","name":"Silver Payal Anklets","cat":"Silver","wt":"925 Sterling","img":""}]}</script>
+<script>
+// ---- CONFIG: change admin login here ----
+const ADMIN_ID="shanti", ADMIN_PASS="Shanti@2026", WA="916392615114";
+const CATS=[["Necklace","📿"],["Earrings","✨"],["Rings","💍"],["Bangles","⭕"],["Silver","🥈"],["Coins","🪙"]];
+const $=id=>document.getElementById(id);
+let state=JSON.parse($("data").textContent), filter="All", art=null;
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const gem='<svg viewBox="0 0 40 40"><path d="M13 11h14l7 7-14 19L6 18z" fill="none" stroke="#b8892f" stroke-width="2"/><path d="M6 18h28M13 11l7 26 7-26" fill="none" stroke="#b8892f"/></svg>';
+function opts(sel,all){sel.innerHTML=(all||[]).concat(CATS.map(c=>c[0])).map(c=>`<option>${esc(c)}</option>`).join("")}
+function render(){
+ $("cats").innerHTML=CATS.map(c=>`<div class="cat" data-c="${c[0]}"><div class="ic">${c[1]}</div><span>${c[0]}</span></div>`).join("");
+ $("filters").innerHTML=["All"].concat(CATS.map(c=>c[0])).map(c=>`<button class="chip ${c===filter?"on":""}" data-f="${c}">${c}</button>`).join("");
+ const list=state.items.filter(i=>filter==="All"||i.cat===filter);
+ $("grid").innerHTML=list.length?list.map(i=>`<div class="item"><button class="del" data-d="${i.id}" title="Delete">×</button><div class="pic">${i.img?`<img src="${i.img}" alt="${esc(i.name)}" loading="lazy">`:gem}</div><div class="info"><small>${esc(i.cat)}</small><h3>${esc(i.name)}</h3><p>${esc(i.wt||"")}</p><button class="btn" data-e="${i.id}">Enquire</button></div></div>`).join(""):'<p class="empty">New designs coming soon in this category.</p>';
+}
+document.addEventListener("click",e=>{
+ const t=e.target;
+ if(t.dataset.c){filter=t.dataset.c;render();location.hash="collections"}
+ const cc=t.closest&&t.closest(".cat");if(cc){filter=cc.dataset.c;render();location.hash="collections"}
+ if(t.dataset.f){filter=t.dataset.f;render()}
+ if(t.dataset.e){const it=state.items.find(i=>i.id===t.dataset.e);$("eInt").value=it.cat;$("eMsg").value="I am interested in: "+it.name;location.hash="enquiry"}
+ if(t.dataset.d&&confirm("Delete this item?")){state.items=state.items.filter(i=>i.id!==t.dataset.d);save("Item deleted.")}
+});
+// Enquiry -> WhatsApp
+$("eSend").onclick=()=>{
+ const n=$("eName").value.trim(),p=$("ePhone").value.trim();
+ if(!n||p.replace(/\D/g,"").length<10){$("eNote").textContent="Please enter your name and a valid 10-digit mobile number.";return}
+ const txt=`*New Enquiry – Shanti Jewellers*\nName: ${n}\nMobile: ${p}\nInterested in: ${$("eInt").value}\nMessage: ${$("eMsg").value.trim()||"-"}`;
+ window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(txt),"_blank");
+ $("eNote").textContent="Opening WhatsApp… please press Send there.";
+};
+// Admin
+function setAdmin(on){document.body.classList.toggle("admin",on);try{on?sessionStorage.setItem("sj","1"):sessionStorage.removeItem("sj")}catch(e){}}
+$("adminLink").onclick=()=>$("login").classList.add("on");$("lx").onclick=()=>$("login").classList.remove("on");
+$("lgo").onclick=()=>{if($("lu").value.trim()===ADMIN_ID&&$("lp").value===ADMIN_PASS){setAdmin(true);$("login").classList.remove("on");$("lp").value=""}else $("lmsg").textContent="Wrong User ID or Password."};
+$("logout").onclick=()=>setAdmin(false);
+function shrink(file){return new Promise((res,rej)=>{const r=new FileReader();r.onerror=rej;r.onload=()=>{const im=new Image();im.onerror=rej;im.onload=()=>{const m=640,s=Math.min(1,m/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=im.width*s;c.height=im.height*s;c.getContext("2d").drawImage(im,0,0,c.width,c.height);res(c.toDataURL("image/jpeg",.8))};im.src=r.result};r.readAsDataURL(file)})}
+$("aAdd").onclick=async()=>{
+ const name=$("aName").value.trim();if(!name){$("aMsg").textContent="Please enter the item name.";return}
+ let img="";const f=$("aImg").files[0];
+ if(f){try{img=await shrink(f)}catch(e){$("aMsg").textContent="Could not read the photo.";return}}
+ state.items.unshift({id:"i"+Date.now(),name,cat:$("aCat").value,wt:$("aWt").value.trim(),img});
+ $("aName").value="";$("aWt").value="";$("aImg").value="";save("Item added.");
+};
+async function save(ok){
+ render();$("aMsg").textContent="Saving…";
+ try{
+  art=art||await claude.use("artifact");
+  if(!art)throw new Error("na");
+  const c=document.documentElement.cloneNode(true);
+  c.querySelector("#data").textContent=JSON.stringify(state);
+  ["cats","filters","grid"].forEach(i=>c.querySelector("#"+i).innerHTML="");
+  ["eInt","aCat"].forEach(i=>c.querySelector("#"+i).innerHTML="");
+  c.querySelector("body").className="";
+  await art.publish("<!DOCTYPE html>\n"+c.outerHTML);
+  $("aMsg").textContent=ok;
+ }catch(e){$("aMsg").textContent="Saved on screen only. To make it permanent for all visitors, open this page while signed in to the owner’s claude.ai account and add the item there.";}
+}
+opts($("eInt"),["General Enquiry"]);opts($("aCat"));render();
+try{if(sessionStorage.getItem("sj"))setAdmin(true)}catch(e){}
+</script>
+</body>
+</html>
